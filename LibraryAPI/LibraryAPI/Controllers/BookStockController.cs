@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using LibraryAPI.Models;
+﻿using LibraryAPI.Models;
 using LibraryAPI.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryAPI.Controllers
 {
@@ -29,7 +29,7 @@ namespace LibraryAPI.Controllers
                 return bookTitle;
             }
         }
-        
+
         // GET by Id action
         [HttpGet("{BookId}")]
         public ActionResult<BookStock> Get(int id)
@@ -38,7 +38,7 @@ namespace LibraryAPI.Controllers
             if (BookId is null) return NotFound();
             else return BookId;
         }
-        
+
         // POST action
         [HttpPost]
         public IActionResult Create(BookStock BookStock)
@@ -69,8 +69,11 @@ namespace LibraryAPI.Controllers
             }
             return BadRequest();
         }
-        // PUT action for getting a book out
 
+
+
+        // PUT action for getting a book out
+        /*
         [HttpPut("{id}")]
         public IActionResult Update(int id) //updating current values
         {
@@ -86,23 +89,23 @@ namespace LibraryAPI.Controllers
             return NoContent();
         }
 
+        */
 
 
 
 
 
+        //if (existingBookIn.BookIn > 0)
+        //{
+        //    existingBookIn = existingBookTotal - existingBookOut //shows current state
+        //    existingBookIn ++i,                                     //changing BookIn state to 1 less
+        //    existingBookOut i++,                                    //changing BookOut state to 1 more
 
-            //if (existingBookIn.BookIn > 0)
-            //{
-            //    existingBookIn = existingBookTotal - existingBookOut //shows current state
-            //    existingBookIn ++i,                                     //changing BookIn state to 1 less
-            //    existingBookOut i++,                                    //changing BookOut state to 1 more
+        //    _BookStockService.Update(existingBookIn, existingBookOut); //Update these new values into table
+        //    return NoContent();  // want it to return "Your book reservation has been made"
+        //}
+        //return BadRequest();
 
-            //    _BookStockService.Update(existingBookIn, existingBookOut); //Update these new values into table
-            //    return NoContent();  // want it to return "Your book reservation has been made"
-            //}
-            //return BadRequest();
-        
         //checkoutmethod, put ^^
 
         // PUT action for returning book 
@@ -126,7 +129,7 @@ namespace LibraryAPI.Controllers
         //    return BadRequest();
         //}
         //checkoutmethod, put ^^
-        
+
         // DELETE action
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

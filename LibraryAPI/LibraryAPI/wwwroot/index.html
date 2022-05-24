@@ -1,0 +1,22 @@
+﻿public bool CheckoutBook(string resId, string memberId)
+    {
+        using (SqlConnection con = new SqlConnection("put your db con string here"))
+        {
+            using (SqlCommand cmd = new SqlCommand("sp_CheckoutBook", con))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.Add("@ResId", SqlDbType.VarChar).Value = resId;
+                cmd.Parameters.Add("@MemberId", SqlDbType.VarChar).Value = memberId;
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    if (rdr["checkoutsuccessful"].ToString() == "1")
+                    {
+                        return true;
+                    }
+                }

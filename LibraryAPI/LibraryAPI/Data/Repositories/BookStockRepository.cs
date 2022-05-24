@@ -33,6 +33,23 @@ namespace LibraryAPI.Data.Repositories
         {
             return _BookStockContext.BookStocks.ToList();
         }
+
+        /*
+        public IEnumerable<string> GetJoinedData()
+        {
+            List<BookInfo> bookinfos = _LibraryAPIContext.BookInfo.ToList();
+            List<BookStock> bookstocks = _LibraryAPIContext.BookStock.ToList();
+
+            var result = from bookinfo in bookinfos
+                         join bookstock in bookstocks
+                         on bookinfo.BookTitle equals bookstock.BookTitle
+                         select $"BookTitle: {bookinfo.BookTitle}, Bookstock:{bookstock.BookTitle}";
+
+        }
+        */
+
+
+
         public bool Save()
         {
             return _BookStockContext.SaveChanges() > 0;
