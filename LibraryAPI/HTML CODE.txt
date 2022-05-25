@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Avanade Library</title>
+    <link rel='stylesheet' href='css/index.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="js/index.css" />
+
+</head>
+<!---------------------------------------------------------------------------------------
+  A onload trigger is added to the body which will call the readTodoItems() function
+  which will in turn send a REST API GET request to the microservice to read the todo_list
+  from the DB
+---------------------------------------------------------------------------------------->
+<body onload="readBookInfo()">
+
+
+
+
+    <div class="main">
+        <u><h3>Our Library</h3></u>
+        <p> We offer a collection of books that are easily accessible. Browse through our book collection and to see what books we have in stock. You can collect your book the same day after make a reservation.   </p>
+        <p> You can use books manager to reserve or return books.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!---------------------------------------------------------------------------------------
+      Search Form - look up current books in the database
+    ---------------------------------------------------------------------------------------->
+    <div class="header">
+        <h1>Search for a book</h1>
+        <hr />
+        <form action="javascript:getBookInfo()" style="margin-top: 10px">
+            <label for="newBookInfoDescription">Book Title:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Book Author:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Year published:</label>
+            <input type="number" id="newBookInfoDescription" placeholder="Type...">
+            <input type="submit" value="Search" class="addButton" />
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!---------------------------------------------------------------------------------------
+      Reserve/return Form - look up how many of a book is in the database
+    ---------------------------------------------------------------------------------------->
+    <!--<div class="header">
+        <h1>Reserve/return </h1>
+        <hr />
+        <form action="javascript:updateBookstock()" style="margin-top: 10px">
+            <label for="newBookInfoDescription">Book Title:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Book Author:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Year published:</label>
+            <input type="number" id="newBookInfoDescription" placeholder="Type...">
+            <select name=" = " request" id="StockId">
+                <option value="reserve">Reserve</option>
+                <option value="return">Return</option>
+            </select>
+            <input type="submit" value="Search" class="addButton" />
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>-->
+    <!---------------------------------------------------------------------------------------
+      Donation Form - Add books to database
+    ---------------------------------------------------------------------------------------->
+    <!--<div class="header">
+        <h1>Donate a book</h1>
+        <hr />
+        <form action="javascript:addNewBookInfo()" style="margin-top: 10px">
+            <label for="newBookInfoDescription">Book Title:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Book Author:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Year published:</label>
+            <input type="number" id="newBookInfoDescription" placeholder="Type...">
+            <input type="submit" value="Add" class="addButton" />
+        </form>
+    </div>-->
+
+
+    <!---------------------------------------------------------------------------------------
+      Report damaged books - Delete books from database
+    ---------------------------------------------------------------------------------------->
+    <!--<br>
+    <br>
+    <br>
+    <div class="header">
+        <h1>Damaged Books</h1>
+        <hr />
+        <form action="javascript:deleteNewBookInfo()" style="margin-top: 10px">
+            <label for="newBookInfoDescription">Book Title:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Book Author:</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Type...">
+            <label for="newBookInfoDescription">Year published:</label>
+            <input type="number" id="newBookInfoDescription" placeholder="Type...">
+            <input type="submit" value="Add" class="addButton" />
+        </form>
+    </div>-->
+
+    <!---------------------------------------------------------------------------------------
+      HTML element to hold the todoList.  This is where all the TodoItems will be displayed
+    ---------------------------------------------------------------------------------------->
+    <!--<ul id="todoList">-->
+    <!-- This list is empty at start and is populated by the readTodoItems() function
+         called by the onload trigger (see the body element above)
+     -->
+    <!--</ul>-->
+
+
+    
+    
+
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

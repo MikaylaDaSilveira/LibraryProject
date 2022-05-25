@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7810BfATR05v0uAPzwwUGLmYs4fHkJ1KsP0wPTdYTM8=",
+  "Hash": "monAQerZmpgvV135PVvHN/Tn1Q4T+MEu4L7waMZIqo8=",
   "Source": "LibraryAPI",
   "BasePath": "_content/LibraryAPI",
   "Mode": "Default",
@@ -17,6 +17,40 @@
   ],
   "Assets": [
     {
+      "Identity": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\css\\index.css",
+      "SourceId": "LibraryAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
+    },
+    {
+      "Identity": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\css\\LibraryWall.jpg",
+      "SourceId": "LibraryAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI",
+      "RelativePath": "css/LibraryWall.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LibraryWall.jpg"
+    },
+    {
       "Identity": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\index.html",
       "SourceId": "LibraryAPI",
       "SourceType": "Discovered",
@@ -32,6 +66,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\js\\index.js",
+      "SourceId": "LibraryAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI",
+      "RelativePath": "js/index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\index.js"
+    },
+    {
+      "Identity": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\LibraryWall.jpg",
+      "SourceId": "LibraryAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI",
+      "RelativePath": "LibraryWall.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\LibraryWall.jpg"
     }
   ]
 }

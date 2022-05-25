@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="copyright" content="QA http://www.qa.com">
+    <meta name="author" content="Phillip Chan, phillip.chan@qa.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>BookInfo List Example</title>
+
+</head>
+
+
+<!---------------------------------------------------------------------------------------
+  A onload trigger is added to the body which will call the readTodoItems() function
+  which will in turn send a REST API GET request to the microservice to read the todo_list
+  from the DB
+---------------------------------------------------------------------------------------->
+<body onload="readBookInfoItems()">
+
+    <!---------------------------------------------------------------------------------------
+      This is the Header
+    ---------------------------------------------------------------------------------------->
+    <div class="header">
+        <h1>TODO List Example</h1>
+        <hr />
+        <form action="javascript:addNewBookInfoItem()" style="margin-top: 10px">
+            <label for="newBookInfoDescription">Please enter a TODO Item</label>
+            <input type="text" id="newBookInfoDescription" placeholder="Title...">
+            <input type="submit" value="Add" class="addButton" />
+        </form>
+    </div>
+
+    <!---------------------------------------------------------------------------------------
+      HTML element to hold the todoList.  This is where all the TodoItems will be displayed
+    ---------------------------------------------------------------------------------------->
+    <ul id="bookInfoList">
+        <!-- This list is empty at start and is populated by the readTodoItems() function
+             called by the onload trigger (see the body element above)
+         -->
+    </ul>
+
+    <!---------------------------------------------------------------------------------------
+      Scripts
+    ---------------------------------------------------------------------------------------->
+    <script src="js/index.js">
+        
+    </script>
+</body>
+</html>
