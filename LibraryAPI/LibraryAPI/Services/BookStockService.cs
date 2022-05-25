@@ -29,13 +29,14 @@ namespace LibraryAPI.Services
         {
             return _BookStockRepository.GetAll();
         }
-        public void Update(BookStock old, BookStock newT)
+
+        public void Update(BookStock oldElement, BookStock newElement)
         {
-            old.BookTitle = newT.BookTitle;
-            old.BookAuthor = newT.BookAuthor;
-            old.BookYear = newT.BookYear;
-            _BookStockRepository.Update(old);
-            _BookStockRepository.Save();
+            oldElement.BookTotal = newElement.BookTotal;
+            oldElement.BookOut = newElement.BookOut;
+            oldElement.BookIn = newElement.BookIn;
+            _BookStockRepository.Update(oldElement);
+            _BookStockRepository.Save(); ;
         }
     }
 }

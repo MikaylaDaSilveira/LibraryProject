@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "nFS4E8oRu1UojpeiylMz0gi7i3xxvR9dS91cPM1uxvs=",
+  "Hash": "7810BfATR05v0uAPzwwUGLmYs4fHkJ1KsP0wPTdYTM8=",
   "Source": "LibraryAPI",
   "BasePath": "_content/LibraryAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryAPI\\wwwroot",
+      "Source": "LibraryAPI",
+      "ContentRoot": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\index.html",
+      "SourceId": "LibraryAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\C# code\\MiniProject\\LibraryAPI\\LibraryAPI\\wwwroot\\",
+      "BasePath": "_content/LibraryAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
 }

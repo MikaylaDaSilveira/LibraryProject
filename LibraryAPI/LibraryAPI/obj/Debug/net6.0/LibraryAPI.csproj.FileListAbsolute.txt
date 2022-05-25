@@ -59,3 +59,4 @@ C:\C# code\MiniProject\LibraryAPI\LibraryAPI\obj\Debug\net6.0\refint\LibraryAPI.
 C:\C# code\MiniProject\LibraryAPI\LibraryAPI\obj\Debug\net6.0\LibraryAPI.pdb
 C:\C# code\MiniProject\LibraryAPI\LibraryAPI\obj\Debug\net6.0\LibraryAPI.genruntimeconfig.cache
 C:\C# code\MiniProject\LibraryAPI\LibraryAPI\obj\Debug\net6.0\ref\LibraryAPI.dll
+C:\C# code\MiniProject\LibraryAPI\LibraryAPI\bin\Debug\net6.0\LibraryAPI.staticwebassets.runtime.json

@@ -48,7 +48,7 @@ namespace LibraryAPI.Controllers
             if (ModelState.IsValid)
             {
                 _BookStockService.Add(BookStock);
-                return base.CreatedAtAction(nameof(Create), new { id = BookStock.BookId }, BookStock);
+                return base.CreatedAtAction(nameof(Create), new { id = BookStock.StockId }, BookStock);
             }
             return BadRequest();
         }
@@ -58,7 +58,7 @@ namespace LibraryAPI.Controllers
         public IActionResult Update(int id, BookStock bookstock)
         {
             var existingBookStock = _BookStockService.Get(id);
-            if (existingBookStock is null || existingBookStock.BookId != id)
+            if (existingBookStock is null || existingBookStock.StockId != id)
             {
                 return BadRequest();
             }

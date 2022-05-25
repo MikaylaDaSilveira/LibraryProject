@@ -4,7 +4,7 @@
 
 namespace LibraryAPI.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class LibraryFirstBuild : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,7 @@ namespace LibraryAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     BookTitle = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
                     BookAuthor = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    BookYear = table.Column<int>(type: "int", maxLength: 4, nullable: false)
+                    BookYear = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -27,18 +27,15 @@ namespace LibraryAPI.Migrations
                 name: "BookStocks",
                 columns: table => new
                 {
-                    BookId = table.Column<int>(type: "int", nullable: false)
+                    StockId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    BookTitle = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
-                    BookAuthor = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    BookYear = table.Column<int>(type: "int", maxLength: 4, nullable: false),
-                    BookTotal = table.Column<int>(type: "int", maxLength: 2, nullable: false),
-                    BookOut = table.Column<int>(type: "int", maxLength: 2, nullable: false),
-                    BookIn = table.Column<int>(type: "int", maxLength: 2, nullable: false)
+                    BookTotal = table.Column<int>(type: "int", nullable: false),
+                    BookOut = table.Column<int>(type: "int", nullable: false),
+                    BookIn = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BookStocks", x => x.BookId);
+                    table.PrimaryKey("PK_BookStocks", x => x.StockId);
                 });
         }
 

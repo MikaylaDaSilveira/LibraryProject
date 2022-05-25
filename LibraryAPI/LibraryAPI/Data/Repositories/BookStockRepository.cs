@@ -23,11 +23,11 @@ namespace LibraryAPI.Data.Repositories
         }
         public bool Exists(int id)
         {
-            return _BookStockContext.BookStocks.Any(u => u.BookId == id);
+            return _BookStockContext.BookStocks.Any(u => u.StockId == id);
         }
         public BookStock Get(int id)
         {
-            return _BookStockContext.BookStocks.FirstOrDefault(u => u.BookId == id);
+            return _BookStockContext.BookStocks.FirstOrDefault(u => u.StockId == id);
         }
         public IEnumerable<BookStock> GetAll()
         {
